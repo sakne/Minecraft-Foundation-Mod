@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 45,
+  "experince": 0.8,
+  "group": "silicone",
+  "ingredient": {
+    "item": "foundation:silicone_blend"
+  },
+  "result": "foundation:raw_silicone"
+}

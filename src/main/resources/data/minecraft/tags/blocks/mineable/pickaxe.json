@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "foundation:silicone_block",
+    "foundation:silicone_casting",
+    "foundation:pressurized_heat_chamber"
+  ]
+}

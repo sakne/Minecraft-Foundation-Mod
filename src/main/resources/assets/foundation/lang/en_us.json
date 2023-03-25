@@ -1,0 +1,13 @@
+{
+  "item.foundation.raw_silicone": "Raw Silicon",
+  "item.foundation.silicone": "Silicon",
+  "item.foundation.silicone_blend": "Silicon Blend",
+  "item.foundation.copper_gear": "Copper Gear",
+  "item.foundation.silicone_alloy": "Silicon Alloy",
+  "item.foundation.redstone_coil": "Redstone Coil",
+  "item.foundation.pressure_chamber": "Pressure Chamber",
+
+  "block.foundation.silicone_block": "Block Of Silicon",
+  "block.foundation.silicone_casting": "Silicon Casting",
+  "block.foundation.pressurized_heat_chamber": "Pressurized Heat Chamber"
+}

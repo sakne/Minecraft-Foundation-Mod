@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RDR",
+    "SPS",
+    "CSC"
+  ],
+  "key": {
+    "D": {
+      "item": "foundation:silicone_casting"
+    },
+    "S": {
+      "item": "foundation:silicone"
+    },
+    "C": {
+      "item": "foundation:copper_gear"
+    },
+    "R": {
+      "item": "foundation:redstone_coil"
+    },
+    "P": {
+      "item": "foundation:pressure_chamber"
+    }
+  },
+  "result": {
+    "item": "foundation:pressurized_heat_chamber"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 50,
+  "experince": 0.4,
+  "group": "silicone",
+  "ingredient": {
+    "item": "foundation:raw_silicone"
+  },
+  "result": "foundation:silicone"
+}

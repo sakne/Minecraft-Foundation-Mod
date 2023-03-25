@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "BBB",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sand"
+    },
+    "B": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "foundation:silicone_blend"
+  },
+  "show_notification": true
+}

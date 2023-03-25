@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silicone",
+  "ingredients": [
+    {
+      "item": "foundation:silicone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "foundation:silicone"
+  }
+}

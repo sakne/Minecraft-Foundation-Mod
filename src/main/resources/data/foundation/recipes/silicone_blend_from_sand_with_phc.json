@@ -1,0 +1,11 @@
+{
+  "type": "foundation:pressurized_heat_chamber",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "output": {
+    "item": "foundation:silicone_blend"
+  }
+}

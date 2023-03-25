@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  R",
+    "SGS",
+    "R  "
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "foundation:silicone"
+    }
+  },
+  "result": {
+    "item": "foundation:redstone_coil"
+  },
+  "show_notification": true
+}
