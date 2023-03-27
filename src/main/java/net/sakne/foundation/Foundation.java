@@ -14,7 +14,9 @@ public class Foundation implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		// REGISTERING OWO THINGIES
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntities();

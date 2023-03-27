@@ -18,6 +18,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.sakne.foundation.block.custom.PressurizedHeatChamberBlock;
 import net.sakne.foundation.item.ModItems;
@@ -149,6 +150,59 @@ public class Pressurized_Heat_Chamber_Entity extends BlockEntity implements Exte
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
         return inventory.getStack(1).getMaxCount() > inventory.getStack(1).getCount();
+    }
+
+    private boolean CanInsert(int slot, ItemStack stack, @Nullable Direction side) {
+        Direction localDir = this.getWorld().getBlockState(this.pos).get(PressurizedHeatChamberBlock.FACING);
+
+        if(side == Direction.UP || side == Direction.DOWN) {
+            return false;
+        }
+
+        return switch (localDir) {
+            default ->
+                side.getOpposite() == Direction.NORTH && slot == 0 ||
+                        side.getOpposite() == Direction.EAST && slot == 0 ||
+                        side.getOpposite() == Direction.WEST && slot == 0;
+            case EAST ->
+                side.rotateYClockwise() == Direction.NORTH && slot == 0 ||
+                        side.rotateYClockwise() == Direction.EAST && slot == 0 ||
+                        side.rotateYClockwise() == Direction.WEST && slot == 0;
+            case SOUTH ->
+                side == Direction.NORTH && slot == 0 ||
+                        side == Direction.EAST && slot == 0 ||
+                        side == Direction.WEST && slot == 0;
+            case WEST ->
+                side.rotateYCounterclockwise() == Direction.NORTH && slot == 0 ||
+                        side.rotateYCounterclockwise() == Direction.EAST && slot == 0 ||
+                        side.rotateYCounterclockwise() == Direction.WEST && slot == 0;
+        };
+    }
+
+    public boolean canExtract(int slot, ItemStack stack, Direction side) {
+        Direction localDir = this.getWorld().getBlockState(this.pos).get(PressurizedHeatChamberBlock.FACING);
+
+        if(side == Direction.UP) {
+            return false;
+        }
+
+        // Down extract 1
+        if(side == Direction.DOWN) {
+            return slot == 1;
+        }
+
+        // bottom extract 1
+        // right extract 1
+        return switch (localDir) {
+            default -> side.getOpposite() == Direction.SOUTH && slot == 1 ||
+                    side.getOpposite() == Direction.EAST && slot == 1;
+            case EAST -> side.rotateYClockwise() == Direction.SOUTH && slot == 1 ||
+                    side.rotateYClockwise() == Direction.EAST && slot == 1;
+            case SOUTH -> side == Direction.SOUTH && slot == 1 ||
+                    side == Direction.EAST && slot == 1;
+            case WEST -> side.rotateYCounterclockwise() == Direction.SOUTH && slot == 1 ||
+                    side.rotateYCounterclockwise() == Direction.EAST && slot == 1;
+        };
     }
 
     @Override

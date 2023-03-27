@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -15,6 +14,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.sakne.foundation.Foundation;
+import net.sakne.foundation.block.custom.CopperKilnBlock;
 import net.sakne.foundation.item.ModItemGroup;
 import net.sakne.foundation.block.custom.PressurizedHeatChamberBlock;
 
@@ -24,6 +24,8 @@ public class ModBlocks {
 
     public static final Block SILICONE_BLOCK = registerBlock("silicone_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.THE_FOUNDATION);
+    public static final Block COPPER_KILN = registerBlock("copper_kiln",
+            new CopperKilnBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.THE_FOUNDATION);
     public static final Block SILICONE_CASTING = registerBlock("silicone_casting",
             new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.THE_FOUNDATION);
     public static final Block PRESSURIZED_HEAT_CHAMBER = registerBlock("pressurized_heat_chamber",

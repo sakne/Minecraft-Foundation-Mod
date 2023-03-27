@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "foundation:block/copper_kiln",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "foundation:block/copper_kiln"
+    },
+    "facing=south": {
+      "model": "foundation:block/copper_kiln",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "foundation:block/copper_kiln",
+      "y": 270
+    }
+  }
+}

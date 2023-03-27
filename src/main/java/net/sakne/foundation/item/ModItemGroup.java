@@ -12,6 +12,6 @@ public class ModItemGroup {
 
     public static final ItemGroup THE_FOUNDATION = FabricItemGroup.builder(new Identifier(Foundation.MOD_ID))
             .displayName(Text.literal("The Foundation"))
-            .icon(() -> new ItemStack(ModItems.RAW_SILICONE))
+            .icon(() -> new ItemStack(ModItems.PRESSURE_CHAMBER))
             .build();
 }

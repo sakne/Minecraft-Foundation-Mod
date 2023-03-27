@@ -9,5 +9,13 @@
 
   "block.foundation.silicone_block": "Block Of Silicon",
   "block.foundation.silicone_casting": "Silicon Casting",
-  "block.foundation.pressurized_heat_chamber": "Pressurized Heat Chamber"
+  "block.foundation.pressurized_heat_chamber": "Pressurized Heat Chamber",
+  "block.foundation.copper_kiln": "Copper Kiln",
+
+  "item.foundation.copper_sword": "Copper Sword",
+  "item.foundation.copper_pickaxe": "Copper Pickaxe",
+  "item.foundation.copper_axe": "Copper Axe",
+  "item.foundation.copper_shovel": "Copper Shovel",
+  "item.foundation.copper_hoe": "Copper Hoe"
+
 }

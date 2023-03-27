@@ -27,8 +27,8 @@ public class PressurizedHeatChamberScreenHandler extends ScreenHandler {
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new Slot(inventory, 0, 80, 20));
-        this.addSlot(new Slot(inventory, 1, 80, 56));
+        this.addSlot(new Slot(inventory, 0, 80, 20)); // INPUT ITEM SLOT UWU
+        this.addSlot(new Slot(inventory, 1, 80, 56)); // OUTPUT ITEM SLOT UWU
 
 
         addPlayerInventory(playerInventory);
@@ -50,7 +50,7 @@ public class PressurizedHeatChamberScreenHandler extends ScreenHandler {
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
 
-    @Override
+    @Override  // This is the method that actually transfers items between the player inventory and the machine inventory OWO
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
