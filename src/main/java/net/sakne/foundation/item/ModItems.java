@@ -2,6 +2,7 @@ package net.sakne.foundation.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -43,6 +44,11 @@ public class ModItems {
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new ModHoeItem(ModToolMaterials.COPPER, 0, -3f, new Item.Settings()),
             ModItemGroup.THE_FOUNDATION);
+
+    // OWO FURRY STUFF HEHE
+
+    public static final Item TAIL_ARMOR = registerItem("tail_armor",
+            new ArmorItem(ModArmorMaterials.TAILS, ArmorItem.Type.CHESTPLATE,new Item.Settings()), ModItemGroup.THE_FOUNDATION);
 
 
     // OWO THINGIES IS DONE
